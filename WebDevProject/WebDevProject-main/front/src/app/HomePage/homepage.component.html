@@ -1,0 +1,34 @@
+<div class="main">
+
+<div class="welcome-text">
+    <p>Welcome</p>
+    <p>to Movies</p>
+  </div>
+  
+
+    <div class="text">
+      <p>About us</p>
+      <p style="font-size: 30px">
+        Movies is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+      You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+    
+      </p>
+    </div>
+    
+
+
+    <p id="trending-text" style="margin-bottom: 10px;">Trending</p>
+
+    <div class="trending">
+
+      <app-movie-item *ngFor="let movie of movies" [movie] = "movie"></app-movie-item>
+  
+    </div>
+
+  <p id="trending-text" style="margin-top: 50px;margin-bottom: 10px;">Favorite</p>
+
+
+    <div class="trending" style="margin-bottom: 200px;">
+      <app-movie-item *ngFor="let movie of movies" [movie] = "movie"></app-movie-item>
+    </div>
+
